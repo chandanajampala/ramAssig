@@ -1,27 +1,46 @@
 <app-navbar></app-navbar>
-<div class="parallax">
-  <p>
-    <app-para class="textwhite"></app-para>
-  </p>
-  <div class="button-row">
+<div class="parallax flex-container">
+    <app-para class="textwhite text-center" [textInput]='parallaxText'></app-para>
+  <div class="button-row"> 
     <button mat-raised-button>Know more</button>
-  </div>
+   </div>
 </div>
-<div><app-para class="textblack"></app-para></div>
-<div class="back">
-    <p>
-        <app-para class="textwhite"></app-para>
-    </p>
-    <div class="button-row">
+<div ><app-para class="textblack" [textInput]='text1'></app-para></div>
+<div class="back flex-container">
+        <app-para class="textwhite" [textInput]='text2'></app-para>
+    <div class="button-row pad-left">
         <button mat-raised-button>Basic</button>
     </div>
-
 </div>
-<div class="block3">
+<div class="flex-container">
+<div class="block3 ">
     <div class="ad-left">
-       <app-para></app-para>
+       <app-para [textInput]='text3'></app-para>
     </div>
     <div class="ad-right">
-    <app-para></app-para>
+    <app-para [textInput]='text3'></app-para>
     </div>
+</div>
+
+<div class="block4">
+     
+          
+ <div class="mapouter ad-left">
+  <div class="gmap_canvas">
+    <iframe width="532" height="281" id="gmap_canvas" src="https://maps.google.com/maps?q=virtusa%20private%20limited&t=&z=11&ie=UTF8&iwloc=&output=embed"
+      frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net"></a></div>
+ </div>
+ <div class="ad-right">
+    <app-para [textInput]='text4'></app-para>
+ </div>
+</div>
+
+<div class="inlineblock block5 textwhite">
+
+   <app-list></app-list>
+  <app-list></app-list>
+  <app-list></app-list>
+  <app-para></app-para>
+</div>
+
 </div>

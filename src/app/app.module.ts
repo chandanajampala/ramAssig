@@ -7,13 +7,19 @@ import { ParaComponent } from './para/para.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ListComponent } from './list/list.component';
 import {MatButtonModule} from '@angular/material/button';
+import { RightSideBarComponent } from './right-side-bar/right-side-bar.component';
+import { LeftSideBarComponent } from './left-side-bar/left-side-bar.component';
+import { NoSideBarComponent } from './no-side-bar/no-side-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParaComponent,
     NavbarComponent,
-    ListComponent
+    ListComponent,
+    RightSideBarComponent,
+    LeftSideBarComponent,
+    NoSideBarComponent
   ],
   imports: [
     BrowserModule,

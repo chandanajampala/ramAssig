@@ -1,27 +1,40 @@
 .parallax {
-  /* The image used */
   background-image: url("../assets/images/background1.jpg");
-  /* Set a specific height */
   height: 100%;
   width: 100%;
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  padding-top: 10%;
   align-items: center;
 }
 
-app-para {
-  text-align: center;
-  display: block;
+.pad-left{
+  padding-left: 40px;
 
 }
+.text-center{
+  text-align: center;
+}
+.flex-container{
+  display: flex;
+  flex-direction: column;
+}
 
+app-para {
+  padding: 20px;
+  display: block;  
+ width:50%;
+}
+button {
+  border-radius: 40px;
+
+}
 .button-row {
-  /* display: flex; */
+ 
   justify-content: center;
   align-items: center;
 display: block;
@@ -38,28 +51,74 @@ display: block;
 
 .back {
  background-image: url("../assets/images/background2.jpg");
- height: 75%;
- width: 100%;
-  background-size: cover;
-  display: flex;
-  justify-content: left;
-  align-items: center;
+  height: 75%;
+  width: 100%;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: repeat-y;
-  padding-left: 30px;
-  padding-top: 40px;
-
+  background-size: cover;
 }
 
 .ad-left {
   float: left;
+  align-items: center;
+padding-left: 30px;
 }
 
 .ad-right {
   float: right;
+  align-items: center;
   margin-left: 10px;
 }
 
 .block3 {
-  width: 650px;
+  padding-left: 30px;
+  padding-right: 50px;
+  /* width: 650px; */
+  align-items: center;
+   display: flex;
+   flex-direction: row;
+
 }
+
+/* map style */
+    .mapouter {
+      /* position: absolute; */
+      text-align: right;
+      height: 281px;
+      width: 532px;
+    }
+
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      height: 281px;
+      width: 532px;
+    }
+
+    .block4 {
+      padding-top: 30px;
+      padding-right: 30px;
+      padding-left: 50px;
+      padding-bottom: 30px;
+      background-color: greenyellow;
+      /* position: relative; */
+    }
+
+    /* .inlineblock {
+      display: inline-block;
+
+    } */
+    .block5 {
+        display: flex;
+        flex-direction: row;
+       padding-left: 30px;
+       background-color: black;
+    }
+
+  app-list{
+    padding-left: 50px;
+    padding-right: 50px;
+   
+  }
+    
